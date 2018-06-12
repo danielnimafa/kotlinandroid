@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Kotlin App</string>
+    <string name="str_username">Username</string>
+    <string name="str_password">Password</string>
+</resources>
