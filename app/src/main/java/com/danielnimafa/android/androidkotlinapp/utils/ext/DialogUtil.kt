@@ -3,7 +3,7 @@ package com.izzyparcel.android.courier.utils.ext
 import android.app.Activity
 import android.content.DialogInterface
 import android.support.v7.app.AlertDialog
-import com.izzyparcel.android.courier.R
+import com.danielnimafa.android.androidkotlinapp.R
 import com.loserba.android.utils.ext.stringGet
 import java.net.SocketException
 import java.net.SocketTimeoutException
@@ -102,11 +102,4 @@ fun networkError(e: Throwable, activity: Activity) {
 
     var msg = if (res != 0) activity.getString(res) else e.message!!
     showAlertMessage(activity, "Info", msg)
-}
-
-fun Activity.showUnAuthorizedDialog(title: String, message: String, performLogout: () -> Unit) {
-    showAlertSingleActionMessage(this, message, title, { dialog, _ ->
-        dialog.dismiss()
-        performLogout.invoke()
-    }, stringGet(R.string.str_logout))
 }

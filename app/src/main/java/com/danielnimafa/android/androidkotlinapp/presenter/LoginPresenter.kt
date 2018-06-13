@@ -1,5 +1,6 @@
 package com.danielnimafa.android.androidkotlinapp.presenter
 
+import com.danielnimafa.android.androidkotlinapp.utils.networking.ClientRequest
 import com.danielnimafa.android.androidkotlinapp.view.iface.LoginView
 import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter
 import io.reactivex.disposables.CompositeDisposable
@@ -16,5 +17,18 @@ class LoginPresenter(private val subs: CompositeDisposable) : MvpBasePresenter<L
     fun clearInstance() {
         subs.clear()
         realm.close()
+    }
+
+    fun postLoginSubmit() {
+        subs.add(ClientRequest.loginRequest("deviceId", "username", "password",
+                success = {
+
+                },
+                fail = {
+
+                },
+                error = {
+
+                }))
     }
 }
