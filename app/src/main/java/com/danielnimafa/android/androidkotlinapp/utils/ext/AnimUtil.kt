@@ -6,7 +6,7 @@ import android.view.View
 import android.view.animation.Animation
 
 /**
- * Created by danielnimafa on 04/04/18.
+ * Created by danielnimafa on 02/27/18.
  */
 
 fun View.animateFadeIn(duration: Long) {

@@ -6,6 +6,10 @@ import com.danielnimafa.android.androidkotlinapp.utils.Sout
 import com.danielnimafa.android.androidkotlinapp.view.LoginActivity
 import io.realm.Realm
 
+/*
+ * Created by danielnimafa on 02/27/18.
+ */
+
 fun deleteUserdataAndLogout(realm: Realm, activity: Activity) {
 
     /*realm.executeTransactionAsync(

@@ -9,4 +9,6 @@
     <string name="message_timeout">Connection timeout, please try again</string>
     <string name="message_server_lost_conn">Failed to establish connection to server</string>
     <string name="message_invalid_response">Invalid response</string>
+    <string name="timeout_msg">Connection timeout!</string>
+    <string name="invalid_response">Invalid Response!</string>
 </resources>

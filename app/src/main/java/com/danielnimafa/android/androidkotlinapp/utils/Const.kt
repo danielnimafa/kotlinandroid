@@ -4,7 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 
 /**
- * Created by dioilham on 10/19/17.
+ * Created by danielnimafa on 02/27/18.
  */
 
 object Const {

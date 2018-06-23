@@ -3,16 +3,15 @@ package com.danielnimafa.android.androidkotlinapp.utils.ext
 import android.app.Activity
 import android.content.Context
 import android.net.ConnectivityManager
-import com.izzyparcel.android.courier.R
-import com.loserba.android.utils.ext.stringGet
+import com.danielnimafa.android.androidkotlinapp.R
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import java.net.SocketException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
-/**
- * Created by danielnimafa on 04/04/18.
+/*
+ * Created by danielnimafa on 02/27/18.
  */
 
 fun Activity.isOnline(online: () -> Unit, offline: () -> Unit) {

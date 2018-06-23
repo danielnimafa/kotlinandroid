@@ -12,8 +12,8 @@ import android.view.View
 import com.danielnimafa.android.androidkotlinapp.utils.Sout
 import java.util.*
 
-/**
- * Created by danielnimafa on 04/04/18.
+/*
+ * Created by danielnimafa on 02/27/18.
  */
 
 fun Activity.drawableGet(res: Int): Drawable = ContextCompat.getDrawable(this, res)!!

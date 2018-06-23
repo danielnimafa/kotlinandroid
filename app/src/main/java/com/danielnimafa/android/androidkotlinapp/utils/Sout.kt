@@ -1,7 +1,7 @@
 package com.danielnimafa.android.androidkotlinapp.utils
 
 /**
- * Created by danielnimafa on 07/12/17.
+ * Created by danielnimafa on 02/27/18.
  *
  * This is for helping me to log everything into string format
  * I can simply change the dev mode into 0 for production code
