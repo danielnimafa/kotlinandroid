@@ -7,6 +7,10 @@ import java.security.NoSuchAlgorithmException
 import java.util.*
 import kotlin.experimental.and
 
+/*
+ * Created by danielnimafa on 02/27/18.
+ */
+
 fun String.encrypt(): String = Base64.encodeToString(this.toByteArray(), Base64.DEFAULT)
 
 fun String.decrypt(): String = String(Base64.decode(this, Base64.DEFAULT))

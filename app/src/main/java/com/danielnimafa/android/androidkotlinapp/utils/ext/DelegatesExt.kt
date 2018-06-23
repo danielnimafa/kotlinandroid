@@ -3,7 +3,7 @@ package com.danielnimafa.android.androidkotlinapp.utils.ext
 import kotlin.reflect.KProperty
 
 /**
- * Created by danielnimafa on 04/04/18.
+ * Created by danielnimafa on 02/27/18.
  */
 object DelegatesExt {
     fun <T> notNullSingleValue() = NotNullSingleValueVar<T>()

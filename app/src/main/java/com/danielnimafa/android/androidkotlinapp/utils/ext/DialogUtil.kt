@@ -4,10 +4,13 @@ import android.app.Activity
 import android.content.DialogInterface
 import android.support.v7.app.AlertDialog
 import com.danielnimafa.android.androidkotlinapp.R
-import com.loserba.android.utils.ext.stringGet
 import java.net.SocketException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
+
+/*
+ * Created by danielnimafa on 02/27/18.
+ */
 
 fun showAlertMessage(activity: Activity, title: String? = "Title", message: String? = "Pesan") {
     val ad = AlertDialog.Builder(activity).create()
