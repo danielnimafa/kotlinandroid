@@ -7,14 +7,9 @@ import android.text.method.PasswordTransformationMethod
 import android.view.View
 import com.danielnimafa.android.androidkotlinapp.R
 import com.danielnimafa.android.androidkotlinapp.presenter.LoginPresenter
-import com.danielnimafa.android.androidkotlinapp.utils.ext.click
-import com.danielnimafa.android.androidkotlinapp.utils.ext.hideSoftKeyboard
-import com.danielnimafa.android.androidkotlinapp.utils.ext.onTextChanged
-import com.danielnimafa.android.androidkotlinapp.utils.ext.postDelayed
+import com.danielnimafa.android.androidkotlinapp.utils.ext.*
 import com.danielnimafa.android.androidkotlinapp.view.iface.LoginView
 import com.hannesdorfmann.mosby3.mvp.MvpActivity
-import com.izzyparcel.android.courier.utils.ext.showAlertMessage
-import com.loserba.android.utils.ext.*
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -35,7 +30,13 @@ class LoginActivity : MvpActivity<LoginView, LoginPresenter>(), LoginView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        presenter.initInstance()
         setupView()
+    }
+
+    override fun onDestroy() {
+        presenter.clearInstance()
+        super.onDestroy()
     }
 
     private fun setupView() {
