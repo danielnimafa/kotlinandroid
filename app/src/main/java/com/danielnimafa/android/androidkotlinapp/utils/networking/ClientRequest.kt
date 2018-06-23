@@ -1,9 +1,8 @@
 package com.danielnimafa.android.androidkotlinapp.utils.networking
 
-import com.danielnimafa.android.androidkotlinapp.model.CommonBody
 import com.danielnimafa.android.androidkotlinapp.utils.Sout
+import com.danielnimafa.android.androidkotlinapp.utils.ext.createRequestBody
 import com.danielnimafa.android.androidkotlinapp.utils.networking.ServiceGenerator.createService
-import com.loserba.android.utils.ext.createRequestBody
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.observers.DisposableObserver

@@ -1,4 +1,4 @@
-package com.loserba.android.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import android.util.Base64
 import java.io.UnsupportedEncodingException

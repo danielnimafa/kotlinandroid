@@ -1,4 +1,4 @@
-package com.loserba.android.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import kotlin.reflect.KProperty
 

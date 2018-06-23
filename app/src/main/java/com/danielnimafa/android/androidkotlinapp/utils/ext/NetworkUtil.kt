@@ -1,9 +1,10 @@
-package com.loserba.android.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import android.app.Activity
 import android.content.Context
 import android.net.ConnectivityManager
 import com.izzyparcel.android.courier.R
+import com.loserba.android.utils.ext.stringGet
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import java.net.SocketException

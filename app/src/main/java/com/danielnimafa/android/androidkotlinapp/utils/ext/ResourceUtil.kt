@@ -1,4 +1,4 @@
-package com.loserba.android.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import android.app.Activity
 import android.content.Context
@@ -9,14 +9,14 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Build
 import android.support.v4.content.ContextCompat
 import android.view.View
-import com.izzyparcel.android.courier.utils.Sout
+import com.danielnimafa.android.androidkotlinapp.utils.Sout
 import java.util.*
 
 /**
  * Created by danielnimafa on 04/04/18.
  */
 
-fun Activity.drawableGet(res: Int): Drawable = ContextCompat.getDrawable(this,res)!!
+fun Activity.drawableGet(res: Int): Drawable = ContextCompat.getDrawable(this, res)!!
 
 fun Activity.colorGet(res: Int): Int = ContextCompat.getColor(this, res)
 

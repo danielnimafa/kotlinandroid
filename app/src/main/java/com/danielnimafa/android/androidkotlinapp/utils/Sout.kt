@@ -2,7 +2,12 @@ package com.danielnimafa.android.androidkotlinapp.utils
 
 /**
  * Created by danielnimafa on 07/12/17.
+ *
+ * This is for helping me to log everything into string format
+ * I can simply change the dev mode into 0 for production code
+ *
  */
+
 object Sout {
     fun log(key: String, any: Any?) {
         if (PrefHelper.getDevMode() == 1) println(key + ": " + any)

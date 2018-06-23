@@ -1,4 +1,4 @@
-package com.izzyparcel.android.courier.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import android.app.Activity
 import android.content.DialogInterface

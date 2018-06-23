@@ -1,4 +1,4 @@
-package com.loserba.android.utils.ext
+package com.danielnimafa.android.androidkotlinapp.utils.ext
 
 import android.app.Activity
 import android.content.Context
@@ -10,8 +10,7 @@ import android.os.Vibrator
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import com.izzyparcel.android.courier.app.AppCourier
-import com.izzyparcel.android.courier.utils.Sout
+import com.danielnimafa.android.androidkotlinapp.utils.Sout
 
 
 /**
@@ -64,8 +63,8 @@ fun Activity.verifyPermission(granResult: IntArray): Boolean {
     return true
 }
 
-fun isThisDeviceSupportCamera(): Boolean =
-        AppCourier.instance.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA)
+fun isThisDeviceSupportCamera(appContext: Context): Boolean =
+        appContext.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA)
 
 fun postDelayed(todo: () -> Unit, delayMillis: Long) {
     Handler().postDelayed({ todo.invoke() }, delayMillis)
