@@ -61,7 +61,11 @@ class LoginActivity : MvpActivity<LoginView, LoginPresenter>(), LoginView {
 
         loginBtn.click {
             hideSoftKeyboard()
-            postDelayed({ presenter.postLoginSubmit() }, 120)
+            it.isEnabled = false
+            postDelayed({
+                presenter.postLoginSubmit(edUname.text.toString(), edPassword.text.toString())
+                it.isEnabled = true
+            }, 120)
         }
     }
 

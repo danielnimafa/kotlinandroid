@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.support.multidex.MultiDex
 import android.support.multidex.MultiDexApplication
+import com.danielnimafa.android.androidkotlinapp.utils.ext.DelegatesExt
 import com.danielnimafa.android.androidkotlinapp.utils.realmdb.DBMigration
-import com.loserba.android.utils.ext.DelegatesExt
 import com.pixplicity.easyprefs.library.Prefs
 import io.realm.Realm
 import io.realm.RealmConfiguration
